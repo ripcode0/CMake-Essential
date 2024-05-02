@@ -1,14 +1,14 @@
 # Modern CMake
 
-- [CMAKE STAGE](#CMAKE-단계)
-- [INTERFACE LIBRARY](#INTERFACE-LIBRARY)
+- [CMake Stage](#CMAKE-STAGE)
+- [Interface Library](#Interface-Library)
 - [CMake 배치](#cmake-배치)
 - [소스코드 조직화](#소스코드-조직화)
 
 
-## CMAKE 단계
+## CMake Stage
 
-* Proccesing CMakeLists.txt    : 프로세싱 단계
+* CMake 의 프로세싱 절차
     - Configure         : 구성 단계
     ```cmd
     cmake -S . -B build
@@ -25,3 +25,10 @@
     ```cmd
     cmake --build build --config <Debug or Release>
     ```
+    - Test (Optional)              : 테스트 단계 (선택 사항)
+    
+    - Install (Optional)           : 설치 단계 (선택 사항)
+
+## Interface Library
+
+* 실제 실체가 없는 라이브러리다
